@@ -53,6 +53,31 @@ $C_{in} \rightarrow C_1 \rightarrow C_2 \rightarrow C_3 \rightarrow C_{out}$
 - **$C_{in} \rightarrow C_{out}$:** $T_p = 844.0381\,ps$
 - **$C_{in} \rightarrow S_3$:** $T_p = 841.6252\,ps$
 
+- 
+## 3. Requirements and Usage
+
+### Requirements
+
+| Requirement | Description |
+|:---|:---|
+| Software | Tanner T-Spice |
+| Technology | 180 nm CMOS |
+| Model Library | `mosistsmc180.lib` |
+| Supply Voltage | 1.8 V |
+
+### How to Run
+
+**Step 1:** Clone or download the repository.
+
+**Step 2:** Open the desired `.cir` file in Tanner T-Spice.
+
+**Step 3:** Update the `.include` statement with the correct path to `mosistsmc180.lib`.
+
+**Step 4:** Run the transient simulation.
+
+**Step 5:** View the output waveforms and measurement results.
+
+
 Based on the average propagation delays, the path from $C_{in}$ to $C_{out}$ is identified as the critical path among the measured paths.
 
 
