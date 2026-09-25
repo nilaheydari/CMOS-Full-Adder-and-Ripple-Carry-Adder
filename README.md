@@ -1,5 +1,10 @@
 # CMOS Full Adder Design and Simulation
 
+![SPICE](https://img.shields.io/badge/Language-SPICE-2E8B57)
+![CMOS](https://img.shields.io/badge/Technology-CMOS-blue)
+![180nm](https://img.shields.io/badge/Process-180nm-orange)
+  
+
 ## 1. 1-Bit Full Adder
 
 The 1-bit Full Adder is implemented using transistor-level CMOS logic gates and simulated in Tanner T-Spice. It takes three binary inputs (A, B, and Cin) and generates two outputs: Sum and Carry-out (Cout).
