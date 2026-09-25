@@ -12,7 +12,8 @@ The 1-bit Full Adder is implemented using transistor-level CMOS logic gates and 
 | $T_{plh}$ (Low-to-High Delay) | 216.4226 ps | 204.2583 ps |
 | $T_{phl}$ (High-to-Low Delay) | 196.8354 ps | 216.7416 ps |
 | $T_p$ (Avg. Prop. Delay) | 206.6290 ps | 210.4999 ps |
-| $P_{avg}$ (Average Power) | $7.0422\,\mu W$ | $7.0422\,\mu W$ |
+
+**Average Power Consumption:** $P_{avg}=7.0422\,\mu W$
 
 ### Output Waveforms
 
@@ -37,11 +38,6 @@ The 4-bit Ripple Carry Adder consists of four cascaded 1-bit CMOS Full Adders. T
 
 ### Critical Path Analysis
 
-The critical path is the carry propagation path through all four Full Adder stages.
-
-
-### Critical Path Analysis
-
 The carry propagation path was evaluated with $A=1111$, $B=0000$, and a pulsed $C_{in}$.
 
 **Critical Path:**
@@ -53,7 +49,6 @@ $C_{in} \rightarrow C_1 \rightarrow C_2 \rightarrow C_3 \rightarrow C_{out}$
 - **$C_{in} \rightarrow C_{out}$:** $T_p = 844.0381\,ps$
 - **$C_{in} \rightarrow S_3$:** $T_p = 841.6252\,ps$
 
-- 
 ## 3. Requirements and Usage
 
 ### Requirements
@@ -65,20 +60,18 @@ $C_{in} \rightarrow C_1 \rightarrow C_2 \rightarrow C_3 \rightarrow C_{out}$
 | Model Library | `mosistsmc180.lib` |
 | Supply Voltage | 1.8 V |
 
+
 ### How to Run
 
 **Step 1:** Clone or download the repository.
 
 **Step 2:** Open the desired `.cir` file in Tanner T-Spice.
 
-**Step 3:** Update the `.include` statement with the correct path to `mosistsmc180.lib`.
+**Step 3:** Ensure that the `.include` statement correctly references the provided `mosistsmc180.lib` file.
 
 **Step 4:** Run the transient simulation.
 
 **Step 5:** View the output waveforms and measurement results.
-
-
-Based on the average propagation delays, the path from $C_{in}$ to $C_{out}$ is identified as the critical path among the measured paths.
 
 
 
