@@ -15,3 +15,4 @@ The 1-bit Full Adder is implemented using transistor-level CMOS logic gates and 
 | $P_{avg}$ (Average Power) | $7.0422\,\mu W$ | $7.0422\,\mu W$ |
 
 **Average Power Consumption:** $P_{avg} = 7.0422\,\mu W$
+
