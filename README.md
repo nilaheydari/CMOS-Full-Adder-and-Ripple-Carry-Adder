@@ -16,3 +16,8 @@ The 1-bit Full Adder is implemented using transistor-level CMOS logic gates and 
 
 **Average Power Consumption:** $P_{avg} = 7.0422\,\mu W$
 
+### Output Waveforms
+
+![1-Bit Full Adder Waveforms](1bit-waveforms.png)
+
+**Figure 1.** Simulated waveforms for A = 1, B = 0, and varying Cin.
