@@ -14,8 +14,6 @@ The 1-bit Full Adder is implemented using transistor-level CMOS logic gates and 
 | $T_p$ (Avg. Prop. Delay) | 206.6290 ps | 210.4999 ps |
 | $P_{avg}$ (Average Power) | $7.0422\,\mu W$ | $7.0422\,\mu W$ |
 
-**Average Power Consumption:** $P_{avg} = 7.0422\,\mu W$
-
 ### Output Waveforms
 
 ![1-Bit Full Adder Waveforms](1bit-waveforms.png)
@@ -41,14 +39,21 @@ The 4-bit Ripple Carry Adder consists of four cascaded 1-bit CMOS Full Adders. T
 
 The critical path is the carry propagation path through all four Full Adder stages.
 
+
+### Critical Path Analysis
+
+The carry propagation path was evaluated with $A=1111$, $B=0000$, and a pulsed $C_{in}$.
+
 **Critical Path:**
 
 $C_{in} \rightarrow C_1 \rightarrow C_2 \rightarrow C_3 \rightarrow C_{out}$
 
-**Measured Propagation Delays:**
+**Average Propagation Delays:**
 
-- **Critical Path ($C_{in} \rightarrow C_{out}$):** $T_p = 844.0381\,ps$
+- **$C_{in} \rightarrow C_{out}$:** $T_p = 844.0381\,ps$
 - **$C_{in} \rightarrow S_3$:** $T_p = 841.6252\,ps$
 
-The measurements were obtained with $A=1111$, $B=0000$, and a pulsed $C_{in}$.
+Based on the average propagation delays, the path from $C_{in}$ to $C_{out}$ is identified as the critical path among the measured paths.
+
+
 
