@@ -37,3 +37,18 @@ The 4-bit Ripple Carry Adder consists of four cascaded 1-bit CMOS Full Adders. T
 
 **Average Power Consumption:** $P_{avg}=28.1715\,\mu W$
 
+### Critical Path Analysis
+
+The critical path is the carry propagation path through all four Full Adder stages.
+
+**Critical Path:**
+
+$C_{in} \rightarrow C_1 \rightarrow C_2 \rightarrow C_3 \rightarrow C_{out}$
+
+**Measured Propagation Delays:**
+
+- **Critical Path ($C_{in} \rightarrow C_{out}$):** $T_p = 844.0381\,ps$
+- **$C_{in} \rightarrow S_3$:** $T_p = 841.6252\,ps$
+
+The measurements were obtained with $A=1111$, $B=0000$, and a pulsed $C_{in}$.
+
